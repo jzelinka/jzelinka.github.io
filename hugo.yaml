@@ -16,9 +16,11 @@ minify:
 
 # common params
 params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  keywords: [Blog, Portfolio]
   DateFormat: "2 January, 2006"
   defaultTheme: light # dark, light
-  disableThemeToggle: false
+  disableThemeToggle: true
 
   ShowReadingTime: true
   ShowShareButtons: false
@@ -45,19 +47,17 @@ params:
     - name: strava
       url: "https://www.strava.com/athletes/joszelinka"
 
-  # TODO add some nice icons
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: /favicon.ico
+    favicon16x16: /favicon.ico
+    favicon32x32: /favicon.ico
+    apple_touch_icon: /favicon.ico
+    safari_pinned_tab: /favicon.ico
 
   label:
     text: "JZ"
-    icon: /apple-touch-icon.png
     iconHeight: 35
 
   cover:
@@ -90,7 +90,6 @@ languages:
     weight: 1
 
     params:
-      env: production # to enable google analytics, opengraph, twitter-cards and schema.
       title: Osobní stránka Josefa Zelinky
       description: ""
       keywords: [Blog, Portfolio]
@@ -107,15 +106,10 @@ languages:
           Rád tvořím, takže mi volném čase často pomáhá laserová řezačka nebo 3D tiskárna
           a svůj život si nedokážu představit bez vyplavených endorphinů.
           "
-        imageUrl: "<img location>"
-        imageWidth: 120
-        imageHeight: 120
-        imageTitle: my image
-        # buttons:
-        #   - name: Posts
-        #     url: posts
-        #   - name: Tags
-        #     url: tags
+        imageUrl: "/picture.png"
+        imageWidth: 200
+        imageHeight: 200
+        imageTitle: jz_picture
 
     # TODO add things to the menu
     menu:
@@ -144,10 +138,8 @@ languages:
     weight: 2
 
     params:
-      env: production # to enable google analytics, opengraph, twitter-cards and schema.
       title: Josef Zelinka's personal website
       description: "TODO add some info about what this site will try to convey"
-      keywords: [Blog, Portfolio]
       author: Josef Zelinka
       images: ["<link or path of image for opengraph, twitter-cards>"]
 
@@ -158,10 +150,10 @@ languages:
         subtitle: "I'm software develeoper with interest in artificial intelligence focusing mainly on deep learning and constrained programming.
           I'm a maker, so in my free time I often use laser cutter or 3D printer
           and finally, my life is not complete without flowing endorphins."
-        imageUrl: "<img location>"
-        imageWidth: 120
-        imageHeight: 120
-        imageTitle: my image
+        imageUrl: "/picture.png"
+        imageWidth: 200
+        imageHeight: 200
+        imageTitle: jz_picture
 
 
     # TODO add things to the menu
