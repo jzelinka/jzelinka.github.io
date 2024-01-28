@@ -1,0 +1,4 @@
+baseURL = 'jzelinka.github.io'
+languageCode = 'en-us'
+title = 'Jz site'
+theme = 'ananke'
