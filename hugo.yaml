@@ -35,6 +35,7 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+  hideFooter: true
 
   socialIcons:
     - name: github
@@ -91,7 +92,7 @@ languages:
     params:
       env: production # to enable google analytics, opengraph, twitter-cards and schema.
       title: Osobní stránka Josefa Zelinky
-      description: "TODO pridat neco v cestine, aby tu byl nejaky content"
+      description: ""
       keywords: [Blog, Portfolio]
       author: Josef Zelinka
       images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -101,16 +102,20 @@ languages:
       profileMode:
         enabled: true # needs to be explicitly set
         title: Josef Zelinka
-        subtitle: "TODO pridat neco v cestine, aby tu byl nejaky content"
+        subtitle: "Jsem programátor se zájmem o umělou inteligenci.
+          Zaměřuji se hlavně na deep learning a programování pomocí omezujících podmínek (constrained programming).
+          Rád tvořím, takže mi volném čase často pomáhá laserová řezačka nebo 3D tiskárna
+          a svůj život si nedokážu představit bez vyplavených endorphinů.
+          "
         imageUrl: "<img location>"
         imageWidth: 120
         imageHeight: 120
         imageTitle: my image
-        buttons:
-          - name: Posts
-            url: posts
-          - name: Tags
-            url: tags
+        # buttons:
+        #   - name: Posts
+        #     url: posts
+        #   - name: Tags
+        #     url: tags
 
     # TODO add things to the menu
     menu:
@@ -150,16 +155,13 @@ languages:
       profileMode:
         enabled: true # needs to be explicitly set
         title: Josef Zelinka
-        subtitle: "TODO add some text about who i am and what im trying to achieve"
+        subtitle: "I'm software develeoper with interest in artificial intelligence focusing mainly on deep learning and constrained programming.
+          I'm a maker, so in my free time I often use laser cutter or 3D printer
+          and finally, my life is not complete without flowing endorphins."
         imageUrl: "<img location>"
         imageWidth: 120
         imageHeight: 120
         imageTitle: my image
-        buttons:
-          - name: Posts
-            url: posts
-          - name: Tags
-            url: tags
 
 
     # TODO add things to the menu
